@@ -6,7 +6,7 @@ let maxSizeShip = 150;
 
 ship.style.width = `${shipSize}px`
 
-let coordinateX = innerWidth/2 - ship.offsetWidth;
+let coordinateX = innerWidth/2 - ship.offsetWidth/2;
 let coordinateY = 0;
 
 
