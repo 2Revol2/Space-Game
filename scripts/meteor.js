@@ -1,4 +1,6 @@
 const ship = document.querySelector('.ship');
+
+
 export function meteorSpawn(mateorSpeed) {
     setInterval(() => {
         const mateorWrap = document.createElement('div')
@@ -8,8 +10,6 @@ export function meteorSpawn(mateorSpeed) {
         meteor.src = './img/meteor.png'
     
         let randomCoords = Math.floor(Math.random() * (innerWidth - ship.offsetWidth) )
-    
-        
     
         mateorWrap.style.left = `${randomCoords}px`
     

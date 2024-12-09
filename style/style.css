@@ -19,14 +19,15 @@
     background-image: url('../img/backhround.png');
 }
 .ship {
-    display: none;
+    display: block;
     position: absolute;
     bottom: 0;
-
+    z-index: -1;
 }
 .ship img {
     width: 100%;
     height: auto;
+
 }
 .meteor {
     position: absolute;
