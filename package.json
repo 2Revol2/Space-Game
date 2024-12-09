@@ -1,0 +1,12 @@
+{
+  "name": "spacegame",
+  "version": "1.0.0",
+  "tyle": "module",
+  "main": "./scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    overflow: hidden;
+
+}
+.main-page {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/backhround.png');
+}
+.ship {
+    display: none;
+    position: absolute;
+    bottom: 0;
+
+}
+.ship img {
+    width: 100%;
+    height: auto;
+}
+.meteor {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+    top: 0;
+}
+.meteor img {
+    width: 100%;
+}
+.menu {
+    background-color: #29103A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+.menu p {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.menu button {
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #522c5d;
+    background-color: #522c5d;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#easy {
+    color: green;
+}
+#medium {
+    color: orange;
+}
+#hard {
+    color: red;
+}
