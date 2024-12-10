@@ -73,3 +73,14 @@
 #hard {
     color: red;
 }
+.timer {
+    background-color: #29103A;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}

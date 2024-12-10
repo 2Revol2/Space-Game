@@ -1,10 +1,12 @@
 import { meteorSpawn } from "./meteor.js";
 import { startGame } from "./playStart.js";
+import { startTimer } from "./timer.js";
 
 const buttons = document.querySelectorAll('.menu button')
 
 buttons.forEach((button)=>{
     button.addEventListener('click', ()=> {
+        startTimer()
         startGame()
         switch (button.id) {
             case "easy":
