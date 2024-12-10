@@ -1,13 +1,12 @@
 const ship = document.querySelector('.ship');
 
-
 export function meteorSpawn(mateorSpeed) {
     setInterval(() => {
         const mateorWrap = document.createElement('div')
         mateorWrap.classList.add('meteor')
     
         const meteor = document.createElement('img');
-        meteor.src = './img/meteor.png'
+        meteor.src = './img/meteor.webp'
     
         let randomCoords = Math.floor(Math.random() * (innerWidth - ship.offsetWidth) )
     
@@ -22,8 +21,8 @@ export function meteorSpawn(mateorSpeed) {
             let meteorCords =  mateorWrap.getBoundingClientRect();
             
             if (
-                shipCords.left - 15 < meteorCords.right -15 && 
-                shipCords.right -15 > meteorCords.left - 15 && 
+                shipCords.left < meteorCords.right  && 
+                shipCords.right  > meteorCords.left  && 
                 shipCords.top < meteorCords.bottom &&
                 shipCords.bottom > meteorCords.top
             ) {
@@ -34,7 +33,6 @@ export function meteorSpawn(mateorSpeed) {
             
             meteorCodrY +=35
            
-
             if(meteorCodrY > innerHeight - mateorWrap.offsetHeight) {
                 mateorWrap.remove()  
             }
@@ -43,7 +41,6 @@ export function meteorSpawn(mateorSpeed) {
         }, 100);
     
     }, mateorSpeed);
-    
 }
 
 
