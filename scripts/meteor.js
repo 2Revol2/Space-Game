@@ -18,9 +18,25 @@ export function meteorSpawn(mateorSpeed) {
     
         let meteorCodrY = 0;
         setInterval(() => {
-            meteorCodrY +=35
-            if(meteorCodrY > innerHeight - mateorWrap.offsetHeight) {
+            let shipCords = ship.getBoundingClientRect();
+            let meteorCords =  mateorWrap.getBoundingClientRect();
+            
+            if (
+                shipCords.left - 15 < meteorCords.right -15 && 
+                shipCords.right -15 > meteorCords.left - 15 && 
+                shipCords.top < meteorCords.bottom &&
+                shipCords.bottom > meteorCords.top
+            ) {
                 mateorWrap.remove()
+               alert('Вы проиграли');
+               location.reload()
+            }
+            
+            meteorCodrY +=35
+           
+
+            if(meteorCodrY > innerHeight - mateorWrap.offsetHeight) {
+                mateorWrap.remove()  
             }
             mateorWrap.style.top = `${meteorCodrY}px`
     

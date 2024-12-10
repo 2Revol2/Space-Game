@@ -8,13 +8,13 @@ buttons.forEach((button)=>{
         startGame()
         switch (button.id) {
             case "easy":
-                meteorSpawn(3000)
+                meteorSpawn(2000)
                 break;
             case "medium":
-                meteorSpawn(1500)
+                meteorSpawn(1000)
                 break;
             case "hard":
-                meteorSpawn(700)
+                meteorSpawn(500)
                     break;
             default:
                 break;
